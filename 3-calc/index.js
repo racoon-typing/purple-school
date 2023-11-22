@@ -24,6 +24,4 @@ switch (operation) {
     case "divide":
         divide(firstNum, secondNum);
         break;
-    // default:
-    //     break;
 }
