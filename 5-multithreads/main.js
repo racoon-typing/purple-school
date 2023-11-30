@@ -23,5 +23,4 @@ function calc(number) {
 
 
 const result = calc(300000);
-console.log('Количество элементов в arrSplit:', result);
 

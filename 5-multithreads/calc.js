@@ -1,16 +1,11 @@
-function calc(number) {
-    const arr = [];
-    const arrSplit = [];
+module.exports.calc = function calc(start, end) {
+    const numbers = [];
 
-    for (let i = 1; i < number; i++) {
-        arr.push(i);
-
-        if (arr[i - 1] % 3 === 0) {
-            arrSplit.push(i);
-        }
+    for (let i = start; i < end; i++) {
+        numbers.push(i);
     }
 
-    return arrSplit.length;
-}
+    const divisibleByThree = numbers.filter((num) => num % 3 === 0);
 
-module.exports = { calc }
+    return divisibleByThree.length;
+};
